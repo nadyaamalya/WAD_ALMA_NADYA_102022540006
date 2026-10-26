@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contact = trim($_POST["contact"]);
     $jobTitle = $_POST["job_title"];
     $status = $_POST["status"];
+    
 
     $sql = "INSERT INTO employees
             (employee_id, employee_name, contact, job_title, status)
